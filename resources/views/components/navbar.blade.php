@@ -6,8 +6,8 @@
             <img src="https://firebasestorage.googleapis.com/v0/b/abhc-63252.appspot.com/o/filemanager%2Fdae6n1651481918290logo%5B1%5D.png?alt=media&token=9c752acb-db5e-4242-9e5b-ba8d98271fb9" class="h-20" alt="Flowbite Logo" />
         </a>
         <div class="flex items-center space-x-6 rtl:space-x-reverse">
-            <a href="tel:5541251234" class="text-sm  text-gray-500 dark:text-white hover:underline">(+855) 78 667-721</a>
-            <a href="#" class="text-sm  text-blue-600 dark:text-blue-500 hover:underline">Login</a>
+            <a href="tel:+85578667721" class="text-sm  text-gray-500 dark:text-white hover:underline">(+855) 78 667-721</a>
+            <a href="/login" class="text-sm  text-blue-600 dark:text-blue-500 hover:underline">Login</a>
         </div>
     </div>
 </nav>
