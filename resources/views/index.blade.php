@@ -4,7 +4,7 @@
         <!-- Slides -->
         <div class="overflow-hidden" data-glide-el="track">
             <ul class="relative w-full overflow-hidden p-0 whitespace-no-wrap flex flex-no-wrap [backface-visibility: hidden] [transform-style: preserve-3d] [touch-action: pan-Y] [will-change: transform]">
-                <li><img src="https://Tailwindmix.b-cdn.net/image-05.jpg" class="w-90 max-w-50 max-h-50 m-auto" /></li>
+                <li><img src="https://firebasestorage.googleapis.com/v0/b/abhc-63252.appspot.com/o/filemanager%2Fgj6o16124213527255.jpg?alt=media&token=fb2c418e-0745-4745-9d86-401d2482713b" class="w-50 max-w-60 max-h-50 m-auto" /></li>
                 <li><img src="https://Tailwindmix.b-cdn.net/image-01.jpg" class="w-90  max-w-50 max-h-50 m-auto" /></li>
                 <li><img src="https://Tailwindmix.b-cdn.net/image-02.jpg" class="w-90  max-w-50 max-h-50 m-auto" /></li>
                 <li><img src="https://Tailwindmix.b-cdn.net/image-03.jpg" class="w-90  max-w-50 max-h-50 m-auto" /></li>
@@ -54,57 +54,43 @@
         glide06.mount();
     </script> <br>
     
-    <div class="h-56 grid grid-cols-4 gap-2 content-start ...">
-        <div class="card card-side bg-base-100 shadow-xl">
-            <figure><img src="https://1.bp.blogspot.com/-PpJnrW_Q2yY/VngEhVSMdMI/AAAAAAAAC4E/x2WRGuQRVN0/s400/12390954_633811513425282_8997186920872637348_n.jpg" class="w-50 h-80" alt="Movie"/></figure>
-            <div class="card-body">
-              <h2 class="card-title">Math</h2>
-              <p>Click the button to watch</p>
-              <div class="card-actions justify-end">
-                <button class="btn btn-primary">See More</button>
-              </div>
+    <div class="bg-white">
+      <div class="mx-auto max-w-2xl px-4 py-16 sm:px-6 sm:py-24 lg:max-w-7xl lg:px-8">
+        <h2 class="sr-only">Products</h2>
+    
+        <div class="grid grid-cols-1 gap-x-6 gap-y-10 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 xl:gap-x-8">
+          <a href="#" class="group">
+            <div class="aspect-h-1 aspect-w-1 w-full overflow-hidden rounded-lg bg-gray-200 xl:aspect-h-8 xl:aspect-w-7">
+              <img src="https://tailwindui.com/img/ecommerce-images/category-page-04-image-card-01.jpg" alt="Tall slender porcelain bottle with natural clay textured body and cork stopper." class="h-full w-full object-cover object-center group-hover:opacity-75">
             </div>
-          </div>
-          <div class="card card-side bg-base-100 shadow-xl">
-            <figure><img src="https://keoserey.files.wordpress.com/2011/06/untitled2.png?w=106" class="w-50 h-80" alt="Movie"/></figure>
-            <div class="card-body">
-              <h2 class="card-title">Maths Grade 12</h2>
-              <p>Click the button to</p>
-              <div class="card-actions justify-end">
-                <button class="btn btn-primary">See</button>
-              </div>
+            <h3 class="mt-4 text-sm text-gray-700">Earthen Bottle</h3>
+            <p class="mt-1 text-lg font-medium text-gray-900">$48</p>
+          </a>
+          <a href="#" class="group">
+            <div class="aspect-h-1 aspect-w-1 w-full overflow-hidden rounded-lg bg-gray-200 xl:aspect-h-8 xl:aspect-w-7">
+              <img src="https://tailwindui.com/img/ecommerce-images/category-page-04-image-card-02.jpg" alt="Olive drab green insulated bottle with flared screw lid and flat top." class="h-full w-full object-cover object-center group-hover:opacity-75">
             </div>
-          </div>
-          <div class="card card-side bg-base-100 shadow-xl">
-            <figure><img src="https://www.elibraryofcambodia.org/wp-content/uploads/2017/03/yk-1914-english-grade-4-small.png" class="w-50 h-80" alt="Movie"/></figure>
-            <div class="card-body">
-              <h2 class="card-title">English Grade 4</h2>
-              <p>Click the button to see Detail</p>
-              <div class="card-actions justify-end">
-                <button class="btn btn-primary">Read</button>
-              </div>
+            <h3 class="mt-4 text-sm text-gray-700">Nomad Tumbler</h3>
+            <p class="mt-1 text-lg font-medium text-gray-900">$35</p>
+          </a>
+          <a href="#" class="group">
+            <div class="aspect-h-1 aspect-w-1 w-full overflow-hidden rounded-lg bg-gray-200 xl:aspect-h-8 xl:aspect-w-7">
+              <img src="https://tailwindui.com/img/ecommerce-images/category-page-04-image-card-03.jpg" alt="Person using a pen to cross a task off a productivity paper card." class="h-full w-full object-cover object-center group-hover:opacity-75">
             </div>
-          </div>
-          <div class="card card-side bg-base-100 shadow-xl">
-            <figure><img src="https://www.learnkhmer.online/img/readings/book-grade-4.jpg" class="w-50 h-80" alt="Movie"/></figure>
-            <div class="card-body">
-              <h2 class="card-title">សៀវភៅ ភាសាខ្មែរ ថ្នាក់ទី​ ៤</h2>
-              <p>ចុចទីនេះសម្រាប់អាន</p>
-              <div class="card-actions justify-end">
-                <button class="btn btn-primary">អាន</button>
-              </div>
+            <h3 class="mt-4 text-sm text-gray-700">Focus Paper Refill</h3>
+            <p class="mt-1 text-lg font-medium text-gray-900">$89</p>
+          </a>
+          <a href="#" class="group">
+            <div class="aspect-h-1 aspect-w-1 w-full overflow-hidden rounded-lg bg-gray-200 xl:aspect-h-8 xl:aspect-w-7">
+              <img src="https://tailwindui.com/img/ecommerce-images/category-page-04-image-card-04.jpg" alt="Hand holding black machined steel mechanical pencil with brass tip and top." class="h-full w-full object-cover object-center group-hover:opacity-75">
             </div>
-          </div>
-          <div class="card card-side bg-base-100 shadow-xl">
-            <figure><img src="https://www.learnkhmer.online/img/readings/book-grade-1.jpg" class="w-50 h-80" alt="Movie"/></figure>
-            <div class="card-body">
-              <h2 class="card-title">Hair Color Course</h2>
-              <p>Click the button to Read Detail</p>
-              <div class="card-actions justify-end">
-                <button class="btn btn-primary">READ</button>
-              </div>
-            </div>
-          </div>
+            <h3 class="mt-4 text-sm text-gray-700">Machined Mechanical Pencil</h3>
+            <p class="mt-1 text-lg font-medium text-gray-900">$35</p>
+          </a>
+    
+          <!-- More products... -->
+        </div>
       </div>
+    </div>
 
 </x-layout>
