@@ -14,7 +14,9 @@
     
     <x-navbar/>
     {{ $slot }}
-    
+
+
+
 
     <!-- Optional JavaScript; choose one of the two! -->
 
