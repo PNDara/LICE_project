@@ -2,7 +2,7 @@
 
 namespace App\Admin\Controllers;
 
-use \App\Models\book;
+use \App\Models\Book;
 use OpenAdmin\Admin\Controllers\AdminController;
 use OpenAdmin\Admin\Form;
 use OpenAdmin\Admin\Grid;
@@ -15,7 +15,7 @@ class BookController extends AdminController
      *
      * @var string
      */
-    protected $title = 'book';
+    protected $title = 'Book';
 
     /**
      * Make a grid builder.
@@ -24,13 +24,13 @@ class BookController extends AdminController
      */
     protected function grid()
     {
-        $grid = new Grid(new book());
+        $grid = new Grid(new Book());
 
         $grid->column('id', __('Id'));
-        $grid->column('First name', __('First name'));
-        $grid->column('last name', __('Last name'));
-        $grid->column('gender', __('Gender'));
-        $grid->column('image', __('Image'));
+        $grid->column('Title', __('Title'));
+        $grid->column('Cover')->image();
+        $grid->column('Year', __('Year'));
+        $grid->column('Description', __('Description'));
         $grid->column('created_at', __('Created at'));
         $grid->column('updated_at', __('Updated at'));
 
@@ -45,13 +45,13 @@ class BookController extends AdminController
      */
     protected function detail($id)
     {
-        $show = new Show(book::findOrFail($id));
+        $show = new Show(Book::findOrFail($id));
 
         $show->field('id', __('Id'));
-        $show->field('First name', __('First name'));
-        $show->field('last name', __('Last name'));
-        $show->field('gender', __('Gender'));
-        $show->field('image', __('Image'));
+        $show->field('Title', __('Title'));
+        $show->field('Cover') -> image();
+        $show->field('Year', __('Year'));
+        $show->field('Description', __('Description'));
         $show->field('created_at', __('Created at'));
         $show->field('updated_at', __('Updated at'));
 
@@ -65,12 +65,12 @@ class BookController extends AdminController
      */
     protected function form()
     {
-        $form = new Form(new book());
+        $form = new Form(new Book());
 
-        $form->text('First name', __('First name'));
-        $form->text('last name', __('Last name'));
-        $form->text('gender', __('Gender'));
-        $form->image('image', __('Image'));
+        $form->text('Title', __('Title'));
+        $form->image('Cover')->image();
+        $form->text('Year', __('Year'));
+        $form->text('Description', __('Description'));
 
         return $form;
     }
