@@ -50,7 +50,7 @@
             },
     
         });
-    
+    ` 
         glide06.mount();
     </script> --}}
     <br>
@@ -59,7 +59,7 @@
       <div class="mx-auto max-w-2xl px-4 py-16 sm:px-6 sm:py-24 lg:max-w-7xl lg:px-8">
         <h2 class="sr-only">Products</h2>
         <div class="grid grid-cols-1 gap-x-6 gap-y-10 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 xl:gap-x-8">
-        
+        {{--
           <a href="#" class="group">
             <div class="aspect-h-1 aspect-w-1 w-full overflow-hidden rounded-lg bg-gray-200 xl:aspect-h-8 xl:aspect-w-7">
               <img src="https://images.squarespace-cdn.com/content/v1/56b7c8c5356fb0bab22a64d0/1534195659045-XGYU9AMNAQPP4KL929JC/Salon-3.png?format=1500w" alt="Tall slender porcelain bottle with natural clay textured body and cork stopper." class="h-full w-full object-cover object-center group-hover:opacity-75">
@@ -88,36 +88,38 @@
             </div>
             <h3 class="mt-4 text-sm text-gray-700">Machined Mechanical Pencil</h3>
             <p class="mt-1 text-lg font-medium text-gray-900">$35</p>
-          </a>
+          </a> --}}
           <!-- More products... -->
         
           @foreach($books as $post)
-          <a href="#" class="group">
-            <div class="aspect-h-1 aspect-w-1 w-full overflow-hidden rounded-lg bg-gray-200 xl:aspect-h-8 xl:aspect-w-7">
-              <img  src=" {{ $_SERVER['APP_URL'] . '/uploads/' . $post->Cover }} "  alt="" class="h-full w-full object-cover object-center group-hover:opacity-75">
-             
+          <div class="flex-shrink-0 m-6 relative overflow-hidden bg-slate-100 hover:bg-white hover:scale-105 rounded-lg max-w-xs shadow-lg sm:items-center">
+            <svg class="absolute bottom-0 left-0 mb-8" viewBox="0 0 375 283" fill="none"
+                style="transform: scale(1.5); opacity: 0.1;">
+                <rect x="159.52" y="175" width="152" height="152" rx="8" transform="rotate(-45 159.52 175)" fill="white" />
+                <rect y="107.48" width="152" height="152" rx="8" transform="rotate(-45 0 107.48)" fill="white" />
+            </svg>
+            <div class="relative pt-10 px-10 flex items-center justify-center">
+                <div class="block absolute w-48 h-48 bottom-0 left-0 -mb-24 ml-3"
+                    style="background: radial-gradient(black, transparent 60%); transform: rotate3d(0, 0, 1, 20deg) scale3d(1, 0.6, 1); opacity: 0.2;">
+                </div>
+                <img  src=" {{ $_SERVER['APP_URL'] . '/uploads/' . $post->Cover }} "  alt="" class="h-full w-full object-cover object-center group-hover:opacity-75">
+   
             </div>
-            <h3 class="mt-4 text-sm text-gray-700">{{ $post->Title }}</h3>
-            <div><p class="mt-1 text-lg font-medium text-gray-900">$48</p>
-              <button class="text-white bg-primary rounded-full w-12 h-6 right-full">អាន</button>
+            <div class="relative text-amber-950 px-6 pb-6 mt-6">
+                <span class="block opacity-75 -mb-1">{{ $post->Year }}</span>
+                <div class="flex justify-between">
+                  <h3 class="mt-4 text-sm text-gray-700">{{ $post->Title }}</h3>
+                    <span class="block bg-primary rounded-full text-white text-xs font-bold px-3 py-2 leading-none flex items-center">Read</span>
+                </div>
             </div>
-            
-          </a>
+          </div>
+          
           @endforeach
         </div>
       </div>
     </div>
 
-    <footer class="footer p-10 bg-neutral text-neutral-content">
-    
-      <nav>
-        <h6 class="footer-title">Social</h6> 
-        <div class="grid grid-flow-col gap-4">
-          <a><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" class="fill-current"><path d="M24 4.557c-.883.392-1.832.656-2.828.775 1.017-.609 1.798-1.574 2.165-2.724-.951.564-2.005.974-3.127 1.195-.897-.957-2.178-1.555-3.594-1.555-3.179 0-5.515 2.966-4.797 6.045-4.091-.205-7.719-2.165-10.148-5.144-1.29 2.213-.669 5.108 1.523 6.574-.806-.026-1.566-.247-2.229-.616-.054 2.281 1.581 4.415 3.949 4.89-.693.188-1.452.232-2.224.084.626 1.956 2.444 3.379 4.6 3.419-2.07 1.623-4.678 2.348-7.29 2.04 2.179 1.397 4.768 2.212 7.548 2.212 9.142 0 14.307-7.721 13.995-14.646.962-.695 1.797-1.562 2.457-2.549z"></path></svg></a>
-          <a><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" class="fill-current"><path d="M19.615 3.184c-3.604-.246-11.631-.245-15.23 0-3.897.266-4.356 2.62-4.385 8.816.029 6.185.484 8.549 4.385 8.816 3.6.245 11.626.246 15.23 0 3.897-.266 4.356-2.62 4.385-8.816-.029-6.185-.484-8.549-4.385-8.816zm-10.615 12.816v-8l8 3.993-8 4.007z"></path></svg></a>
-          <a><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" class="fill-current"><path d="M9 8h-3v4h3v12h5v-12h3.642l.358-4h-4v-1.667c0-.955.192-1.333 1.115-1.333h2.885v-5h-3.808c-3.596 0-5.192 1.583-5.192 4.615v3.385z"></path></svg></a>
-        </div>
-      </nav>
-    </footer>
+   
 </x-layout>
-  
+
+
