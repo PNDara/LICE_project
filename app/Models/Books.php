@@ -5,11 +5,11 @@ namespace App\Models;
 use Illuminate\Database\Eloquent\Model;
 
 
-class Book extends Model
+class Books extends Model
 {
     
 
-    protected $table = 'book';
+    protected $table = 'Books';
 
 
     

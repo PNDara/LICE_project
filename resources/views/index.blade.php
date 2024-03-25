@@ -59,7 +59,7 @@
       <div class="mx-auto max-w-2xl px-4 py-16 sm:px-6 sm:py-24 lg:max-w-7xl lg:px-8">
         <h2 class="sr-only">Products</h2>
         <div class="grid grid-cols-1 gap-x-6 gap-y-10 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 xl:gap-x-8">
-          @foreach($book as $post)
+        
           <a href="#" class="group">
             <div class="aspect-h-1 aspect-w-1 w-full overflow-hidden rounded-lg bg-gray-200 xl:aspect-h-8 xl:aspect-w-7">
               <img src="https://images.squarespace-cdn.com/content/v1/56b7c8c5356fb0bab22a64d0/1534195659045-XGYU9AMNAQPP4KL929JC/Salon-3.png?format=1500w" alt="Tall slender porcelain bottle with natural clay textured body and cork stopper." class="h-full w-full object-cover object-center group-hover:opacity-75">
@@ -90,21 +90,20 @@
             <p class="mt-1 text-lg font-medium text-gray-900">$35</p>
           </a>
           <!-- More products... -->
+        
+          @foreach($books as $post)
           <a href="#" class="group">
             <div class="aspect-h-1 aspect-w-1 w-full overflow-hidden rounded-lg bg-gray-200 xl:aspect-h-8 xl:aspect-w-7">
-              <img src="{{ $post->Cover }}" alt="Tall slender porcelain bottle with natural clay textured body and cork stopper." class="h-full w-full object-cover object-center group-hover:opacity-75">
+              <img  src=" {{ $_SERVER['APP_URL'] . '/uploads/' . $post->Cover }} "  alt="" class="h-full w-full object-cover object-center group-hover:opacity-75">
+             
             </div>
-            <h3 class="mt-4 text-sm text-gray-700">Earthen Bottle</h3>
-            <p class="mt-1 text-lg font-medium text-gray-900">$48</p>
+            <h3 class="mt-4 text-sm text-gray-700">{{ $post->Title }}</h3>
+            <div><p class="mt-1 text-lg font-medium text-gray-900">$48</p>
+              <button class="text-white bg-primary rounded-full w-12 h-6 right-full">អាន</button>
+            </div>
+            
           </a>
           @endforeach
-          <a href="#" class="group">
-            <div class="aspect-h-1 aspect-w-1 w-full overflow-hidden rounded-lg bg-gray-200 xl:aspect-h-8 xl:aspect-w-7">
-              <img src="{{ $post->Cover }}" alt="" class="h-full w-full object-cover object-center group-hover:opacity-75">
-            </div>
-            <h3 class="mt-4 text-sm text-gray-700">Earthen Bottle</h3>
-            <p class="mt-1 text-lg font-medium text-gray-900">$48</p>
-          </a>
         </div>
       </div>
     </div>
@@ -120,5 +119,5 @@
         </div>
       </nav>
     </footer>
-
 </x-layout>
+  

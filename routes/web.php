@@ -15,10 +15,10 @@ use App\Admin\Controllers\BooksController;
 */
 
 Route::get('/', function () {
-    $book = DB::table('book')->get();
+    $books = DB::table('books')->get();
     
     return view('index',[
-        'book' => $book ]);
+        'books' => $books ]);
     });
         
 
