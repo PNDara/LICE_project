@@ -5,7 +5,7 @@
             <a href="/" class="flex items-center space-x-3 rtl:space-x-reverse">
                 <img src="https://firebasestorage.googleapis.com/v0/b/abhc-63252.appspot.com/o/filemanager%2Fdae6n1651481918290logo%5B1%5D.png?alt=media&token=9c752acb-db5e-4242-9e5b-ba8d98271fb9" class="h-20" alt="Flowbite Logo" />
             </a>
-            <div class=" items-center md:hidden block">
+            <div class=" items-center sm:hidden block md:show">
                 <input type="text" placeholder="Search" class="rounded-full flex ">
               </div>
             <div class="flex items-center space-x-6 rtl:space-x-reverse">
@@ -22,7 +22,7 @@
             <div class="flex items-center ">
                 <ul class="flex flex-row font-medium mt-0 space-x-8 rtl:space-x-reverse text-sm">
                     <li>
-                        <a href="/" class="text-gray-900 dark:text-white hover:underline no-underline " aria-current="page">Home</a>
+                        <a href="/" class="text-gray-900 dark:text-white hover:no-underline " aria-current="page">Home</a>
                     </li>
                     <li>
                         <a href="/about" class="text-gray-900 dark:text-white hover:underline no-underline ">About</a>
