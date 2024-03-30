@@ -18,14 +18,34 @@
 <body>
 
     
-    <div class="bg-gray-200 h-48 w-full shadow-xl flex justify-center items-center sm:w-full">
+    <div class="bg-gray-200 h-48 w-full shadow-xl flex flex-auto justify-center items-center sm:w-full">
         <div class="flex py-7 px-20">
             <div class="flex justify-center items-center space-x-8 ml-60">
-               <a href="https://www.facebook.com/LICESergeComtesseCambodia" class=""> <i class="fa-brands fa-facebook fa-2xl hover:scale-110 bg-white" style="color: #4267B2;"></i></a>
-                <a href="" class="hover:scale-110 "><i class="fa-brands fa-instagram fa-2xl" style="color:#E1306C"></i></a>
-               <a href=""> <i class="fa-brands fa-telegram fa-2xl hover:scale-110" style="color:#0088CC"></i></a>
-                <a href=""><i class="fa-brands fa-tiktok fa-xl hover:scale-110" style="color:#212121"></i></a>
-                <a href=""><i class="fa-solid fa-phone-volume fa-xl" style="color:#7f7f7f"></i></a>
+               <span class="bg-gray-200 border-solid border-white border-3 h-12 w-12 rounded-full flex items-center justify-center ">
+                <a href="https://www.facebook.com/LICESergeComtesseCambodia" class=""> 
+                    <i class="fa-brands fa-facebook fa-2xl hover:scale-110 items-center justify-center" style="color: #4267B2;"></i>
+                </a>
+               </span>
+                <span class="bg-gray-200 border-solid border-white border-3 h-12 w-12 rounded-full flex items-center justify-center ">
+                    <a href="" class="">
+                        <i class="fa-brands fa-instagram fa-2xl hover:scale-110" style="color:#E1306C"></i>
+                    </a>
+                </span >
+               <span class="bg-gray-200 border-solid border-white border-3 h-12 w-12 rounded-full flex items-center justify-center ">
+                <a href=""> 
+                    <i class="fa-brands fa-telegram fa-2xl hover:scale-110" style="color:#0088CC"></i>
+                </a>
+               </span>
+                <span class="bg-gray-200 border-solid border-white border-3 h-12 w-12 rounded-full flex items-center justify-center ">
+                    <a href="">
+                        <i class="fa-brands fa-tiktok fa-xl hover:scale-110" style="color:#212121"></i>
+                    </a>
+                </span>
+                <span class="bg-gray-200 border-solid border-white border-3 h-12 w-12 rounded-full flex items-center justify-center">
+                    <a href="">
+                        <i class="fa-solid fa-phone-volume fa-xl hover:scale-110" style="color:#7f7f7f"></i>
+                    </a>
+                </span>
             </div>
         </div>
     </div>
