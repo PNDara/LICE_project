@@ -55,7 +55,7 @@
     </script> --}}
     <br>
     
-    <div class="bg-white">
+    <div class="bg-black">
       <div class="mx-auto max-w-2xl px-4 py-16 sm:px-20 sm:py-24 lg:max-w-7xl lg:px-8">
         <h2 class="sr-only">Products</h2>
         <div class="grid grid-cols-1 gap-x-6 gap-y-10 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 xl:gap-x-8">
@@ -92,17 +92,17 @@
           <!-- More products... -->
         
           @foreach($books as $post)
-          <div class="flex-shrink-0 m-6 relative overflow-hidden bg-slate-100 hover:bg-white hover:scale-105 rounded-lg max-w-xs shadow-lg sm:items-center">
+          <div class="flex-shrink-0 m-6 relative overflow-hidden bg-slate-100 hover:bg-white hover:scale-105 rounded-lg max-w-xs shadow-sm sm:items-center">
             <svg class="absolute bottom-0 left-0 mb-8" viewBox="0 0 375 283" fill="none"
                 style="transform: scale(1.5); opacity: 0.1;">
                 <rect x="159.52" y="175" width="152" height="152" rx="8" transform="rotate(-45 159.52 175)" fill="white" />
                 <rect y="107.48" width="152" height="152" rx="8" transform="rotate(-45 0 107.48)" fill="white" />
             </svg>
-            <div class="relative pt-10 px-10 flex items-center justify-center">
+            <div class="relative h-72 flex items-center justify-center">
                 <div class="block absolute w-48 h-48 bottom-0 left-0 -mb-24 ml-3"
                     style="background: radial-gradient(black, transparent 60%); transform: rotate3d(0, 0, 1, 20deg) scale3d(1, 0.6, 1); opacity: 0.2;">
                 </div>
-                <img  src=" {{ $_SERVER['APP_URL'] . '/uploads/' . $post->Cover }} "  alt="" class="h-full w-full object-cover object-center group-hover:opacity-75">
+                <img  src=" {{ $_SERVER['APP_URL'] . '/uploads/' . $post->Cover }} "  alt="" class="h-full w-full group-hover:opacity-75">
    
             </div>
             <div class="relative text-amber-950 px-6 pb-6 mt-6">
