@@ -18,9 +18,9 @@
 <body>
 
     
-    <div class="bg-gray-200 h-48 w-full shadow-xl flex flex-auto justify-center items-center sm:w-full">
+    <div class="bg-gray-300 h-48 w-full shadow-xl flex flex-auto justify-center items-center sm:w-full">
         <div class="flex py-7 px-20">
-            <div class="flex justify-center items-center space-x-8 ml-60">
+            <div class="flex justify-center items-center space-x-8">
                <span class="bg-gray-200 border-solid border-white border-3 h-12 w-12 rounded-full flex items-center justify-center ">
                 <a href="https://www.facebook.com/LICESergeComtesseCambodia" class=""> 
                     <i class="fa-brands fa-facebook fa-2xl hover:scale-110 items-center justify-center" style="color: #4267B2;"></i>
@@ -54,6 +54,15 @@
     {{  $slot  }}
  </div>
 
-
+ <div class="grid grid-cols-2 gap-4 lg:grid-cols-4">
+    <div>01</div>
+    <div>02</div>
+    <div>03</div>
+    <div>04</div>
+    <div>05</div>
+    <div>06</div>
+    <div>07</div>
+    <div>08</div>
+  </div>
 </body>
 </html>

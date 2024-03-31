@@ -10,7 +10,7 @@
 
     <title>home</title>
   </head>
-  <body>
+  <body style="min-width: fit-content">
     
     <x-navbar/>
     {{ $slot }}

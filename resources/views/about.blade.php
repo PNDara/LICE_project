@@ -1,6 +1,6 @@
 <x-layout>
     <div class="mt-4">
-        <img class="object-cover h-55 w-85 transition duration-300 ease-in-out hover:scale-105" src="https://scontent.fpnh24-1.fna.fbcdn.net/v/t1.6435-9/127101145_416372163079860_4531171968345760342_n.jpg?_nc_cat=108&ccb=1-7&_nc_sid=5f2048&_nc_eui2=AeH1L7uo1gGZfbcpTPLKLWfI0RmAQ6bNzvjRGYBDps3O-IT3RQhw6k2T5iC9NuvE7zf6ngx6BFahVRTVEkSXG67F&_nc_ohc=3O9dw1YxSN8AX8i3KYL&_nc_ht=scontent.fpnh24-1.fna&oh=00_AfDgkfwEDpvd9688eKSsO24Kneb8Ky0pMRWiqvTZ7Q4hYw&oe=662366BA">
+        <img class="object-cover h-55 w-85 " src="https://scontent.fpnh24-1.fna.fbcdn.net/v/t1.6435-9/127101145_416372163079860_4531171968345760342_n.jpg?_nc_cat=108&ccb=1-7&_nc_sid=5f2048&_nc_eui2=AeH1L7uo1gGZfbcpTPLKLWfI0RmAQ6bNzvjRGYBDps3O-IT3RQhw6k2T5iC9NuvE7zf6ngx6BFahVRTVEkSXG67F&_nc_ohc=3O9dw1YxSN8AX8i3KYL&_nc_ht=scontent.fpnh24-1.fna&oh=00_AfDgkfwEDpvd9688eKSsO24Kneb8Ky0pMRWiqvTZ7Q4hYw&oe=662366BA">
       </div>
     <div class="overview mt-4">
         <div class="overview-contain container">

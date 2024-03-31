@@ -1,6 +1,6 @@
-<nav class="border-b-2 border-rose-600">
+<nav class="border-b-4 border-rose-200">
 
-    <div class="bg-white border-gray-200 dark:bg-gray-900 ">
+    <div class="bg-black dark:bg-gray-900 ">
         <div class="flex flex-wrap justify-between items-center mx-auto max-w-screen-xl">
             <a href="/" class="flex items-center space-x-3 rtl:space-x-reverse">
                 <img src="https://firebasestorage.googleapis.com/v0/b/abhc-63252.appspot.com/o/filemanager%2Fdae6n1651481918290logo%5B1%5D.png?alt=media&token=9c752acb-db5e-4242-9e5b-ba8d98271fb9" class="h-20" alt="Flowbite Logo" />
@@ -17,7 +17,7 @@
         </div>
     </div>
     
-    <div class="bg-gray-50 dark:bg-gray-700 flex justify-center">
+    <div class="bg-white dark:bg-gray-700 flex justify-center">
         <div class="max-w-screen-xl px-4 py-3 mx-auto">
             <div class="flex items-center ">
                 <ul class="flex flex-row font-medium mt-0 space-x-8 rtl:space-x-reverse text-sm">
