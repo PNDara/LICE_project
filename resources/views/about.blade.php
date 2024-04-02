@@ -6,7 +6,7 @@
         <div class="overview-contain container">
             <div class="left-overview">
                 <div class="border-wrapper flex align-items:center justify-content-center">
-                <h3 class="text-3xl text-yellow-500 hover:text-yellow-950">Overview</h3>
+                <h3 class="text-4xl font-bold text-yellow-500 hover:text-yellow-950">Overview</h3>
                 </div>
                 <div class="max-w-screen-xl mx-auto p-5 sm:p-10 md:p-16 bg-gray-100 mt-4">
                     <div class="rounded overflow-hidden flex flex-col max-w-xl mx-auto">

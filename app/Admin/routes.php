@@ -15,4 +15,6 @@ Route::group([
 
     $router->resource('books', BookController::class);
     
+    $router->resource('courses', CourseController::class);
+    
 });

@@ -20,6 +20,13 @@ Route::get('/', function () {
     return view('index',[
         'books' => $books ]);
     });
+
+Route::get('/course', function () {
+    $courses = DB::table('courses')->get();
+        
+    return view('course',[
+            'courses' => $courses ]);
+    });
         
 
 Route::get('/dashboard', function () {
