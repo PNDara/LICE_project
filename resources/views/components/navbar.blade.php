@@ -32,7 +32,7 @@
                         <a href="/" class="text-gray-900 dark:text-white hover:no-underline " aria-current="page">Home</a>
                     </li>
                     <li>
-                        <a href="#" class="text-gray-900 dark:text-white hover:underline no-underline ">Course</a>
+                        <a href="/course" class="text-gray-900 dark:text-white hover:underline no-underline ">Course</a>
                     </li>
                     <li>
                         <a href="#" class="text-gray-900 dark:text-white hover:underline no-underline ">Partners</a>
