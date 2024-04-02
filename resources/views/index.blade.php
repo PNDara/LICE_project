@@ -56,7 +56,6 @@
     
     <div class="bg-gray-100">
       <div class="mx-auto max-w-2xl px-4 py-16 sm:px-20 sm:py-24 lg:max-w-7xl lg:px-8">
-        <h2 class="sr-only">Products</h2>
         <div class="grid gap-8 grid-cols-1 md:grid-cols-2 lg:grid-cols-4">
         {{--
           <a href="#" class="group">
