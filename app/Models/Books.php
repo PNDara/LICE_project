@@ -11,8 +11,5 @@ class Books extends Model
 
     protected $table = 'Books';
 
-
-    
-
     
 }

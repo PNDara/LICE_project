@@ -53,12 +53,10 @@
     ` 
         glide06.mount();
     </script> --}}
-    <br>
     
-    <div class="bg-black">
+    <div class="bg-gray-100">
       <div class="mx-auto max-w-2xl px-4 py-16 sm:px-20 sm:py-24 lg:max-w-7xl lg:px-8">
-        <h2 class="sr-only">Products</h2>
-        <div class="grid grid-cols-1 gap-x-6 gap-y-10 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 xl:gap-x-8">
+        <div class="grid gap-8 grid-cols-1 md:grid-cols-2 lg:grid-cols-4">
         {{--
           <a href="#" class="group">
             <div class="aspect-h-1 aspect-w-1 w-full overflow-hidden rounded-lg bg-gray-200 xl:aspect-h-8 xl:aspect-w-7">
@@ -91,28 +89,40 @@
           </a> --}}
           <!-- More products... -->
         
-          @foreach($books as $post)
-          <div class="flex-shrink-0 m-6 relative overflow-hidden bg-slate-100 hover:bg-white hover:scale-105 rounded-lg max-w-xs shadow-sm sm:items-center">
+          @foreach($books as $book)
+          <div class=" ease-in-out duration-300 overflow-hidden bg-slate-100 hover:bg-white hover:scale-105 rounded-lg shadow-lg">
+            <div class="">
+              <img  src=" {{ $_SERVER['APP_URL'] . '/uploads/' . $book->Cover }} "  alt="" class="h-96 w-full group-hover:opacity-75 object-fill">
+            </div>
+            <div class="px-6 py-4">
+              @if ($book->Year)
+              <span class="">Year: {{ $book->Year }}</span>
+              @else
+              <span class="">Year: N/A</span> 
+              @endif
+              <h3 class="">{{ $book->Title }}</h3>
+              <a></a>
+              <a class=" bg-primary text-white font-bold px-3 py-2 leading-none flex items-center">Read{{ $book->File }}</a>
+            </div>
+          </div>
+
+          {{-- <div class="flex-shrink-0 relative ease-in-out duration-300 overflow-hidden bg-slate-100 hover:bg-white hover:scale-105 rounded-lg shadow-sm sm:items-center">
             <svg class="absolute bottom-0 left-0 mb-8" viewBox="0 0 375 283" fill="none"
                 style="transform: scale(1.5); opacity: 0.1;">
                 <rect x="159.52" y="175" width="152" height="152" rx="8" transform="rotate(-45 159.52 175)" fill="white" />
                 <rect y="107.48" width="152" height="152" rx="8" transform="rotate(-45 0 107.48)" fill="white" />
             </svg>
-            <div class="relative h-72 flex items-center justify-center">
-                <div class="block absolute w-48 h-48 bottom-0 left-0 -mb-24 ml-3"
-                    style="background: radial-gradient(black, transparent 60%); transform: rotate3d(0, 0, 1, 20deg) scale3d(1, 0.6, 1); opacity: 0.2;">
-                </div>
-                <img  src=" {{ $_SERVER['APP_URL'] . '/uploads/' . $post->Cover }} "  alt="" class="h-full w-full group-hover:opacity-75">
-   
+            <div class="relative  flex items-center justify-center">
+                <img  src=" {{ $_SERVER['APP_URL'] . '/uploads/' . $book->Cover }} "  alt="" class="h-full w-full group-hover:opacity-75">
             </div>
             <div class="relative text-amber-950 px-6 pb-6 mt-6">
-                <span class="block opacity-75 -mb-1">{{ $post->Year }}</span>
+                <span class="block opacity-75 -mb-1">{{ $book->Year }}</span>
                 <div class="flex justify-between">
-                  <h3 class="mt-4 text-sm text-gray-700">{{ $post->Title }}</h3>
+                  <h3 class="mt-4 text-sm text-gray-700">{{ $book->Title }}</h3>
                     <span class="block bg-primary rounded-full text-white text-xs font-bold px-3 py-2 leading-none flex items-center">Read</span>
                 </div>
             </div>
-          </div>
+          </div> --}}
           
           @endforeach
         </div>
