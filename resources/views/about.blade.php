@@ -1,4 +1,6 @@
 <x-layout>
+    <div>
+    </div>
     <div class="mt-4">
         <img class="object-cover h-55 w-85 " src="https://scontent.fpnh24-1.fna.fbcdn.net/v/t1.6435-9/127101145_416372163079860_4531171968345760342_n.jpg?_nc_cat=108&ccb=1-7&_nc_sid=5f2048&_nc_eui2=AeH1L7uo1gGZfbcpTPLKLWfI0RmAQ6bNzvjRGYBDps3O-IT3RQhw6k2T5iC9NuvE7zf6ngx6BFahVRTVEkSXG67F&_nc_ohc=3O9dw1YxSN8AX8i3KYL&_nc_ht=scontent.fpnh24-1.fna&oh=00_AfDgkfwEDpvd9688eKSsO24Kneb8Ky0pMRWiqvTZ7Q4hYw&oe=662366BA">
       </div>
@@ -22,6 +24,34 @@
                 </div>    
             </div>
         </div>
+    </div>
+    <div class="py-6 grid grid-cols-1 gap-6 mx-auto lg:grid-cols-2 text-center">
+        <div class="grid grid-rows-2 gap-2 px-4">
+            <p class="flex flex-col justify-center text-4xl font-bold text-yellow-500 hover:text-yellow-950">MISSION</p>
+            <h1 class=" flex flex-col justify-center text-xl">SC-ABHC was created for the mission to serve our partners with highly professional, passion, integrity and discipline in order to make them success in their business through different activities such as Education, Innovation, Connection, and Branding.</h1>
+        </div>
+        <div class="grid grid-rows-2 gap-2 px-4">
+            <p class="flex flex-col justify-center text-4xl font-bold text-yellow-500 hover:text-yellow-950">VISION</p>
+            <h1 class=" flex flex-col justify-center text-xl">"Education is the only way that changes the way hairdresser does salon business today."</h1>
+        </div>
+        
+    </div>
+    <div class="grid grid-rows-8 gap-4 px-4 text-center">
+        <p class=" justify-center text-4xl font-bold text-yellow-500 hover:text-yellow-950">OPENING HOURS</p>
+         <div class="grid grid-cols-3 gap-4">
+            
+            @foreach ($workdays as $workday)
+                <div>{{ $workday->Day }}</div>
+                <div>{{ $workday->Open }}</div>
+                <div>{{ $workday->Cloe }}</div>
+            @endforeach 
+         </div>
+         <div>2</div>
+         <div>3</div>
+         <div>1</div>
+         <div>2</div>
+         <div>3</div>
+        
     </div>
     <section>
         <div class="relative items-center w-full px-5 py-12 mx-auto md:px-12 lg:px-24 max-w-7xl">
@@ -48,11 +78,30 @@
     
                     <h1 class="mx-auto mb-8 text-2xl font-semibold leading-none tracking-tighter text-neutral-600 lg:text-3xl text-yellow-600">2021</h1>
                     <p class="mx-auto text-base leading-relaxed text-gray-500">
-                        Schwarzkopf Professional ASK Academy Cambodia is recognized by the Global Team and listed as one of ASK Academy Locations around world. This program is created to provide hairdresser with Personal Development, Creativity, New Trends around the Globe, and Innovation of Hair Products/Tools.</p>                <div class="mt-4">
+                        Schwarzkopf Professional ASK Academy Cambodia is recognized by the Global Team and listed as one of ASK Academy Locations around world. This program is created to provide hairdresser with Personal Development, Creativity, New Trends around the Globe, and Innovation of Hair Products/Tools.</p>                
+                        <div class="mt-4">
                     </div>
                 </div>
+                @foreach($contents as $content)
+                    <div class="p-6  shadow-2xl">
+                        <img class="object-cover object-center w-full mb-8 lg:h-48 md:h-36 rounded-xl transition duration-300 ease-in-out hover:scale-105" src="{{ $_SERVER['APP_URL'] . '/uploads/' . $content->Cover }}" alt="">
+                        <h1 class="mx-auto mb-8 text-2xl font-semibold leading-none tracking-tighter text-neutral-600 lg:text-3xl text-yellow-600">{{ $content->Year }}</h1>
+                        <p class="mx-auto text-base leading-relaxed text-gray-500">{{ $content->Description }}</p>                
+                            <div class="mt-4">
+                        </div>
+                    </div>
+                @endforeach
             </div>
         </div>
+        
+       {{-- @foreach($contents as $content)
+            <div class="p-6  shadow-2xl">
+                <img class="object-cover object-center w-full mb-8 lg:h-48 md:h-36 rounded-xl transition duration-300 ease-in-out hover:scale-105" src="{{ $_SERVER['APP_URL'] . '/uploads/' . $item->Cover }}" alt="">
+                <h1 class="mx-auto mb-8 text-2xl font-semibold leading-none tracking-tighter text-neutral-600 lg:text-3xl text-yellow-600">{{ $item->Year }}</h1>
+                <p class="mx-auto text-base leading-relaxed text-gray-500">{{ $item->Description }}</div>
+            </div>
+        @endforeach --}}
     </section>
+    
     <x-footer/>
 </x-layout>
