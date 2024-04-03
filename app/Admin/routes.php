@@ -16,5 +16,8 @@ Route::group([
     $router->resource('books', BookController::class);
     
     $router->resource('courses', CourseController::class);
-    
+
+    $router->resource('contents', ContentController::class);
+
+    $router->resource('workdays', WorkdayController::class);
 });

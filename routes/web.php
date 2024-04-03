@@ -27,7 +27,17 @@ Route::get('/course', function () {
     return view('course',[
             'courses' => $courses ]);
     });
-        
+
+Route::get('/about', function () {
+    $contents = DB::table('contents')->get();
+    $workdays = DB::table('Workday')->get();
+    return view('about',[
+                'contents' => $contents ,
+                'workdays' => $workdays ]);
+        });
+                
+    
+    
 
 Route::get('/dashboard', function () {
     return view('dashboard');
@@ -39,10 +49,10 @@ Route::middleware('auth')->group(function () {
     Route::delete('/profile', [ProfileController::class, 'destroy'])->name('profile.destroy');
 });
 
-Route::get('/about', function () {
+// Route::get('/about', function () {
     
-    return view('about',[]);
-    });
+    //return view('about',[]);
+   // }); 
 
 Route::get('/book', [BooksController::class, '']) ->name('book.index');
 

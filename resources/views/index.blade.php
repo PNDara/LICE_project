@@ -102,7 +102,9 @@
               @endif
               <h3 class="">{{ $book->Title }}</h3>
               <a></a>
-              <a class=" bg-primary text-white font-bold px-3 py-2 leading-none flex items-center">Read{{ $book->File }}</a>
+             <div class="flex flex-row-reverse">
+              <a class=" bg-primary text-white font-bold px-3 py-2 leading-none flex items-center rounded-xl">Read{{ $book->File }}</a>
+             </div>
             </div>
           </div>
 
