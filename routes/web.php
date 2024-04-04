@@ -1,8 +1,12 @@
 <?php
 
 use App\Http\Controllers\ProfileController;
+use App\Models\Books;
+use App\Models\Content;
+use App\Models\Course;
+use App\Models\Workday;
 use Illuminate\Support\Facades\Route;
-use App\Admin\Controllers\BooksController;
+
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -15,29 +19,27 @@ use App\Admin\Controllers\BooksController;
 */
 
 Route::get('/', function () {
-    $books = DB::table('books')->get();
-    
-    return view('index',[
-        'books' => $books ]);
-    });
+  $books = Books::all();
+    return view('index', [
+      'books' => $books
+    ]);
+});
 
 Route::get('/course', function () {
-    $courses = DB::table('courses')->get();
-        
-    return view('course',[
-            'courses' => $courses ]);
-    });
+  $courses = Course::all();
+      
+  return view('course',[
+          'courses' => $courses ]);
+  });
 
 Route::get('/about', function () {
-    $contents = DB::table('contents')->get();
-    $workdays = DB::table('Workday')->get();
-    return view('about',[
-                'contents' => $contents ,
-                'workdays' => $workdays ]);
-        });
-                
-    
-    
+  $contents = Content::all();
+  $workdays = Workday::all();
+
+  return view('about',[
+              'contents' => $contents ,
+              'workdays' => $workdays ]);
+      });
 
 Route::get('/dashboard', function () {
     return view('dashboard');
@@ -48,12 +50,5 @@ Route::middleware('auth')->group(function () {
     Route::patch('/profile', [ProfileController::class, 'update'])->name('profile.update');
     Route::delete('/profile', [ProfileController::class, 'destroy'])->name('profile.destroy');
 });
-
-// Route::get('/about', function () {
-    
-    //return view('about',[]);
-   // }); 
-
-Route::get('/book', [BooksController::class, '']) ->name('book.index');
 
 require __DIR__.'/auth.php';

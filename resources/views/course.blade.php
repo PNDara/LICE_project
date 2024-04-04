@@ -9,10 +9,10 @@
                         </div>
                         <div>
                             <div class="grid grid-rows-2 justify-between p-4">
-                                <h3 class="mb-2 text-2xl font-bold tracking-tight text-yellow-700 dark:text-white">
+                                <h3 class="mb-2 text-2xl font-bold tracking-tight text-yellow-700">
                                     {{ $course->Title }}
                                 </h3>
-                                <p class="mb-3 font-normal text-gray-700 text-wrap dark:text-gay-400">
+                                <p class="mb-3 font-normal text-gray-700 text-wrap">
                                     {{ $course->Description }}
                                 </p>
                                 <div class="flex flex-row space-x-2">

@@ -8,7 +8,7 @@ use OpenAdmin\Admin\Form;
 use OpenAdmin\Admin\Grid;
 use OpenAdmin\Admin\Show;
 
-class BookController extends AdminController
+class BooksController extends AdminController
 {
     /**
      * Title for current resource.
