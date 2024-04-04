@@ -1,5 +1,6 @@
 <?php
 
+use App\Admin\Controllers\BookController;
 use App\Http\Controllers\ProfileController;
 use App\Models\Books;
 use App\Models\Content;
@@ -20,10 +21,13 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
   $books = Books::all();
+
     return view('index', [
       'books' => $books
     ]);
 });
+
+Route::resource('books', BookController::class);
 
 Route::get('/course', function () {
   $courses = Course::all();
