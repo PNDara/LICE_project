@@ -16,7 +16,9 @@
     
 </head>
 <body>
-
+    <div>
+        {{  $slot  }}
+     </div>
     
     <div class="bg-gray-300 h-48 w-full shadow-xl flex flex-auto justify-center items-center sm:w-full">
         <div class="flex py-7 px-20">
@@ -50,8 +52,6 @@
         </div>
     </div>
    
- <div>
-    {{  $slot  }}
- </div>
+
 </body>
 </html>
